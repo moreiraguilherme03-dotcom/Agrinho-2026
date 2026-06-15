@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Agro Forte • Futuro Sustentável</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+<div class="logo">
+    <span>AGRO FORTE</span>
+</div>
+
+<nav>
+
+<a href="#inicio">Início</a>
+<a href="#desafio">Desafio</a>
+<a href="#tecnologia">Tecnologia</a>
+<a href="#dashboard">Dashboard</a>
+<a href="#simulador">Simulador</a>
+<a href="#futuro">2050</a>
+
+</nav>
+
+<button class="btn-nav">
+Conheça o Projeto
+</button>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section id="inicio" class="hero">
+
+<div class="hero-content">
+
+<div class="tag">
+FUTURO SUSTENTÁVEL
+</div>
+
+<h1>
+Produzir Mais.<br>
+Preservar Melhor.<br>
+Construir o Futuro.
+</h1>
+
+<p>
+O agronegócio brasileiro é um dos maiores do mundo.
+O desafio das próximas décadas é unir tecnologia,
+produção eficiente e preservação ambiental para
+garantir alimento, desenvolvimento e qualidade de vida.
+</p>
+
+<div class="hero-buttons">
+
+<button class="btn-primary">
+Explorar Projeto
+</button>
+
+<button class="btn-secondary">
+Ver Dados
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img
+src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80"
+alt="Agro">
+
+</div>
+
+</section>
+
+<!-- ================= ESTATÍSTICAS ================= -->
+
+<section class="stats">
+
+<div class="stat-card">
+<h2 id="counter1">0</h2>
+<p>Milhões de toneladas produzidas</p>
+</div>
+
+<div class="stat-card">
+<h2 id="counter2">0</h2>
+<p>Empregos gerados</p>
+</div>
+
+<div class="stat-card">
+<h2 id="counter3">0</h2>
+<p>Países atendidos</p>
+</div>
+
+<div class="stat-card">
+<h2 id="counter4">0</h2>
+<p>Inovações tecnológicas</p>
+</div>
+
+</section>
+
+<!-- ================= DESAFIO ================= -->
+
+<section id="desafio" class="section">
+
+<div class="section-header">
+
+<h2>O Grande Desafio</h2>
+
+<p>
+O crescimento da população mundial exige mais alimentos.
+Ao mesmo tempo, precisamos preservar florestas,
+rios e recursos naturais.
+</p>
+
+</div>
+
+<div class="cards-grid">
+
+<div class="info-card">
+
+<div class="card-icon">🌱</div>
+
+<h3>Produção Inteligente</h3>
+
+<p>
+Tecnologias permitem aumentar a produtividade sem ampliar
+a área cultivada.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<div class="card-icon">💧</div>
+
+<h3>Uso Consciente da Água</h3>
+
+<p>
+Sistemas modernos reduzem desperdícios e melhoram a irrigação.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<div class="card-icon">🚁</div>
+
+<h3>Drones e IA</h3>
+
+<p>
+Monitoramento em tempo real e decisões mais precisas.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<div class="card-icon">🌎</div>
+
+<h3>Preservação Ambiental</h3>
+
+<p>
+Produzir respeitando os limites do planeta.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= TECNOLOGIA ================= -->
+
+<section id="tecnologia" class="section dark">
+
+<div class="section-header">
+
+<h2>Tecnologia no Campo</h2>
+
+<p>
+A inovação está transformando a agricultura brasileira.
+</p>
+
+</div>
+
+<div class="technology-grid">
+
+<div class="tech-card">
+<h3>Drones</h3>
+<p>Monitoramento aéreo e análise de lavouras.</p>
+</div>
+
+<div class="tech-card">
+<h3>Inteligência Artificial</h3>
+<p>Previsões climáticas e tomada de decisão.</p>
+</div>
+
+<div class="tech-card">
+<h3>Sensores IoT</h3>
+<p>Dados em tempo real do solo e clima.</p>
+</div>
+
+<div class="tech-card">
+<h3>Máquinas Autônomas</h3>
+<p>Maior produtividade e menor desperdício.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= DASHBOARD ================= -->
+
+<section id="dashboard" class="section">
+
+<div class="section-header">
+
+<h2>Painel de Indicadores</h2>
+
+<p>
+Visualização simplificada do crescimento sustentável.
+</p>
+
+</div>
+
+<div class="charts-grid">
+
+<div class="chart-card">
+
+<h3>Produção Agrícola</h3>
+
+<canvas id="productionChart"></canvas>
+
+</div>
+
+<div class="chart-card">
+
+<h3>Sustentabilidade</h3>
+
+<canvas id="sustainabilityChart"></canvas>
+
+</div>
+
+<div class="chart-card">
+
+<h3>Exportações</h3>
+
+<canvas id="exportsChart"></canvas>
+
+</div>
+
+<div class="chart-card">
+
+<h3>Inovação</h3>
+
+<canvas id="innovationChart"></canvas>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SIMULADOR ================= -->
+
+<section id="simulador" class="section dark">
+
+<div class="section-header">
+
+<h2>Simulador de Sustentabilidade</h2>
+
+<p>
+Ajuste os indicadores e veja o impacto.
+</p>
+
+</div>
+
+<div class="simulator">
+
+<div class="controls">
+
+<label>
+Tecnologia
+<input type="range" id="techRange" min="0" max="100" value="80">
+</label>
+
+<label>
+Preservação
+<input type="range" id="greenRange" min="0" max="100" value="85">
+</label>
+
+<label>
+Uso da Água
+<input type="range" id="waterRange" min="0" max="100" value="70">
+</label>
+
+</div>
+
+<div class="results">
+
+<h3>Resultado</h3>
+
+<div class="score-circle">
+<span id="score">85%</span>
+</div>
+
+<p id="status">
+Sistema Sustentável
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FUTURO ================= -->
+
+<section id="futuro" class="section">
+
+<div class="section-header">
+
+<h2>Brasil 2050</h2>
+
+<p>
+Uma visão do agro nas próximas décadas.
+</p>
+
+</div>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>2025</h3>
+<p>Expansão da agricultura digital.</p>
+</div>
+
+<div class="timeline-item">
+<h3>2030</h3>
+<p>Automação em larga escala.</p>
+</div>
+
+<div class="timeline-item">
+<h3>2040</h3>
+<p>Produção neutra em carbono.</p>
+</div>
+
+<div class="timeline-item">
+<h3>2050</h3>
+<p>Agro altamente tecnológico e sustentável.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<h2>
+O futuro começa com as escolhas de hoje.
+</h2>
+
+<p>
+Tecnologia e sustentabilidade podem caminhar juntas.
+</p>
+
+<button class="btn-primary">
+Conhecer Mais
+</button>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-content">
+
+<h3>Agro Forte • Futuro Sustentável</h3>
+
+<p>
+Projeto inspirado na proposta Agrinho.
+</p>
+
+</div>
+
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/simulator.js"></script>
+<button id="startJourney" class="btn-nav" style="position:fixed;bottom:20px;right:20px;z-index:999;">
+    ▶ Iniciar Jornada
+    </button>
+    <div id="progressBar"></div>
+
+<div id="overlayIntro">
+    <div>
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>Iniciando experiência interativa...</p>
+    </div>
+</div>
+</body>
+</html>
